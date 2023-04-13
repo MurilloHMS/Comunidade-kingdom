@@ -2,8 +2,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+  <link rel="stylesheet" href="{% static 'css/header.css' %}">
   <title>Comunidade Kingdom</title>
+  {% block 'head' %}{% endblock %}
 </head>
 <body>
   <article class="stage">
@@ -41,9 +42,9 @@
                   <li><a href="#">DANÇA</a></li>
               </ul>
           </li>
-          <li><a href="quemsomos/">QUEM SOMOS</a>
+          <li><a href="#">QUEM SOMOS</a>
               <ul>
-                  <li><a href="#">INFORMAÇÕES DA IGREJA</a></li>
+                  <li><a href="{% url 'quemsomos' %}">INFORMAÇÕES DA IGREJA</a></li>
               </ul>
           </li>
           <li><a href="#">CURSOS</a>
