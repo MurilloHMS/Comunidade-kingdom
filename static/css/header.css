@@ -1,0 +1,76 @@
+:root {
+  --cor-fundo : #0d11dd;
+  --cor-hover : #f3870c;
+  --cor-primaria : #ffffff;
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #353535;
+  color: var(--cor-primaria);
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav li {
+  position: relative;
+}
+nav a {
+  display: block;
+  padding: 10px;
+  color: var(--cor-primaria);
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: var(--cor-hover);
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--cor-fundo);
+}
+nav ul ul li {
+  width: 200px;
+}
+nav li:hover > ul {
+  display: block;
+}
+img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.kg-frase-1{
+  color: var(--cor-hover);
+  text-decoration: none;
+}
+
+.kg-frase-2{
+  color: #0489e2;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+}
+.stage {
+  animation: animateBg 60s linear infinite;
+  background-image: linear-gradient(0deg,#ff8c00,#00008b,#ff8c00,#00008b,#ff8c00,#00008b,#ff8c00,#00008b);
+  background-size: 100% 800%;
+  height: 100vh;
+  width: 100vw;
+}
+@keyframes animateBg {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 0% 100%; }
+}

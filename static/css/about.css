@@ -1,0 +1,14 @@
+:root {
+    --cor-fundo : #0d11dd;
+    --cor-hover : #f3870c;
+    --cor-primaria : #ffffff;
+  }
+
+  .description-church {
+    color: var(--cor-primaria);
+    text-align: center;
+  }
+
+  .adress{
+    align-items: center;
+  }

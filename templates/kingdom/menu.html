@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+  <title>Comunidade Kingdom</title>
+</head>
+<body>
+  <article class="stage">
+    <header>
+      <a href="#"><img src="{% static 'media/logo.png' %}" alt="My Logo"></a>
+      <div>
+        <a class="kg-frase-1"id="kg-frase" href ="#">Ver</a> - <a class="kg-frase-2"id="kg-frase" href ="#">Acolher</a> - <a class="kg-frase-1"id="kg-frase" href ="#">Amar</a> - <a class="kg-frase-2"id="kg-frase" href ="#">Ensinar</a> - <a class="kg-frase-1"id="kg-frase" href ="#">Direcionar</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/">INICIO</a></li>
+          <li><a href="#">BIBLIA</a>
+              <ul>
+                  <li><a href="#">NVI</a></li>
+                  <li><a href="#">NTLH</a></li>
+              </ul>
+          </li>
+          <li><a href="#">CULTOS</a>
+              <ul>
+                  <li><a href="#">QUARTA FIRE</a></li>
+                  <li><a href="#">SEXTA FREE</a></li>
+                  <li><a href="#">VIVA PINK</a></li>
+              </ul>
+          </li>
+          <li><a href="#">EVENTOS</a>
+              <ul>
+                  <li><a href="#">VISION ACAMP</a></li>
+              </ul>
+          </li>
+          <li><a href="#">MINISTERIOS</a>
+              <ul>
+                  <li><a href="#">MIDIA</a></li>
+                  <li><a href="#">KINDOM MUSIC</a></li>
+                  <li><a href="#">RECEPÇÃO</a></li>
+                  <li><a href="#">DANÇA</a></li>
+              </ul>
+          </li>
+          <li><a href="quemsomos/">QUEM SOMOS</a>
+              <ul>
+                  <li><a href="#">INFORMAÇÕES DA IGREJA</a></li>
+              </ul>
+          </li>
+          <li><a href="#">CURSOS</a>
+              <ul>
+                  <li><a href="#">ESCOLA KINGDOM</a></li>
+              </ul>
+          </li>
+          <li><a href="#">CONTATO</a></li>
+      </ul>
+      </nav>
+    </header>
+    <main>
+      {% block 'main' %}
+      {% endblock %}
+    </main>
+    <footer>
+      <!-- Add footer content here -->
+    </footer>
+  </article>
+</body>
+</html>
