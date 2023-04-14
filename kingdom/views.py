@@ -23,3 +23,6 @@ def direcionar(request):
 
 def nvi(request):
     return render(request, 'kingdom/biblia/nvi.html')
+
+def fora_da_caixa(request):
+    return render(request, 'kingdom/comunhao/foradacaixa.html')

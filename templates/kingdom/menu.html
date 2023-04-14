@@ -3,7 +3,7 @@
 <html>
 <head>
   <link rel="stylesheet" href="{% static 'css/header.css' %}">
-    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+  <link rel="stylesheet" href="{% static 'css/footer.css' %}">
   <title>{% block 'title' %}{% endblock %}</title>
   {% block 'head' %}{% endblock %}
 </head>
@@ -52,7 +52,7 @@
             </li>
             <li><a href="#">COMUNHÃO</a>
                 <ul>
-                    <li><a href="#">FORA DA CAIXA</a></li>
+                    <li><a href="{% url 'fora-da-caixa' %}">FORA DA CAIXA</a></li>
                     <li><a href="#">PEÇA UMA ORAÇÃO</a></li>
                     <li><a href="#">ORE POR NOSSOS IRMÃOS</a></li>
                     <li><a href="#">COMPARTILHE SEU TESTEMUNHO</a></li>

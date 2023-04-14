@@ -9,5 +9,6 @@ urlpatterns = [
     path('amar/', amar, name='amar'),
     path('ensinar/', ensinar, name='ensinar'),
     path('direcionar/', direcionar, name='direcionar'),
-    path('biblia/nvi', nvi, name='biblia/nvi')
+    path('biblia/nvi', nvi, name='biblia/nvi'),
+    path('comunhao/fora-da-caixa', fora_da_caixa , name='fora-da-caixa')
 ]
