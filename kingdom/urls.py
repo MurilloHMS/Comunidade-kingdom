@@ -3,5 +3,5 @@ from kingdom.views import index , quemsomos
 
 urlpatterns = [
     path('', index),
-    path('quemsomos/', quemsomos)
+    path('quemsomos/', quemsomos, name = 'quemsomos')
 ]

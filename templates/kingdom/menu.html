@@ -3,6 +3,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
   <title>Comunidade Kingdom</title>
 </head>
 <body>
@@ -41,9 +42,9 @@
                   <li><a href="#">DANÇA</a></li>
               </ul>
           </li>
-          <li><a href="quemsomos/">QUEM SOMOS</a>
+          <li><a href="#">QUEM SOMOS</a>
               <ul>
-                  <li><a href="#">INFORMAÇÕES DA IGREJA</a></li>
+                  <li><a href="{% url 'quemsomos' %}">INFORMAÇÕES DA IGREJA</a></li>
               </ul>
           </li>
           <li><a href="#">CURSOS</a>
@@ -51,7 +52,6 @@
                   <li><a href="#">ESCOLA KINGDOM</a></li>
               </ul>
           </li>
-          <li><a href="#">CONTATO</a></li>
       </ul>
       </nav>
     </header>
@@ -59,9 +59,38 @@
       {% block 'main' %}
       {% endblock %}
     </main>
-    <footer>
-      <!-- Add footer content here -->
-    </footer>
+    <!--FONT AWESOME-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+</head>
+<body>
+<footer>
+<div class="footer">
+<div class="row">
+<a href="https://web.facebook.com/kingdomcomunidade?_rdc=1&_rdr"><i class="fa fa-facebook"></i></a>
+<a href="https://www.instagram.com/comunidadekingdom/"><i class="fa fa-instagram"></i></a>
+<a href="#"><i class="fa fa-whatsapp"></i></a>
+
+</div>
+
+<div class="row">
+<ul>
+<li><a href="#">INICIO</a></li>
+<li><a href="{% url 'quemsomos' %}">QUEM SOMOS</a></li>
+<li><a href="#">CULTOS</a></li>
+<li><a href="#">EVENTOS</a></li>
+<li><a href="#">DOAÇÕES</a></li>
+</ul>
+</div>
+
+<div class="row">
+Copyright © 2023 Comunidade Kingdom - Todos os direitos reservados || Criado por: <a href="https://github.com/MurilloHMS"><strong>MurilloHMS</strong></a>
+</div>
+</div>
+</footer>
   </article>
 </body>
 </html>
