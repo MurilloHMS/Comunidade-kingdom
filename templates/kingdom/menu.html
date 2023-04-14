@@ -3,66 +3,106 @@
 <html>
 <head>
   <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
   <title>Comunidade Kingdom</title>
   {% block 'head' %}{% endblock %}
 </head>
 <body>
   <article class="stage">
     <header>
-      <a href="#"><img src="{% static 'media/logo.png' %}" alt="My Logo"></a>
+      <a href="#"><img class="logo-kingdom" src="{% static 'media/logo.png' %}" alt="My Logo"></a>
       <div>
-        <a class="kg-frase-1"id="kg-frase" href ="#">Ver</a> - <a class="kg-frase-2"id="kg-frase" href ="#">Acolher</a> - <a class="kg-frase-1"id="kg-frase" href ="#">Amar</a> - <a class="kg-frase-2"id="kg-frase" href ="#">Ensinar</a> - <a class="kg-frase-1"id="kg-frase" href ="#">Direcionar</a>
+        <a class="kg-frase-1"id="kg-frase" href ="{% url 'ver' %}">Ver</a> - <a class="kg-frase-2"id="kg-frase" href ="{% url 'acolher' %}">Acolher</a> - <a class="kg-frase-1"id="kg-frase" href ="{% url 'amar' %}">Amar</a> - <a class="kg-frase-2"id="kg-frase" href ="{% url 'ensinar' %}">Ensinar</a> - <a class="kg-frase-1"id="kg-frase" href ="{% url 'direcionar' %}">Direcionar</a>
       </div>
-      <nav>
-        <ul>
-          <li><a href="/">INICIO</a></li>
-          <li><a href="#">BIBLIA</a>
-              <ul>
-                  <li><a href="#">NVI</a></li>
-                  <li><a href="#">NTLH</a></li>
-              </ul>
-          </li>
-          <li><a href="#">CULTOS</a>
-              <ul>
-                  <li><a href="#">QUARTA FIRE</a></li>
-                  <li><a href="#">SEXTA FREE</a></li>
-                  <li><a href="#">VIVA PINK</a></li>
-              </ul>
-          </li>
-          <li><a href="#">EVENTOS</a>
-              <ul>
-                  <li><a href="#">VISION ACAMP</a></li>
-              </ul>
-          </li>
-          <li><a href="#">MINISTERIOS</a>
-              <ul>
-                  <li><a href="#">MIDIA</a></li>
-                  <li><a href="#">KINDOM MUSIC</a></li>
-                  <li><a href="#">RECEPÇÃO</a></li>
-                  <li><a href="#">DANÇA</a></li>
-              </ul>
-          </li>
-          <li><a href="#">QUEM SOMOS</a>
-              <ul>
-                  <li><a href="{% url 'quemsomos' %}">INFORMAÇÕES DA IGREJA</a></li>
-              </ul>
-          </li>
-          <li><a href="#">CURSOS</a>
-              <ul>
-                  <li><a href="#">ESCOLA KINGDOM</a></li>
-              </ul>
-          </li>
-          <li><a href="#">CONTATO</a></li>
-      </ul>
-      </nav>
+      <div class="menu-bar">
+        <nav>
+          <ul>
+            <li><a href="/">INICIO</a></li>
+            <li><a href="#">BIBLIA</a>
+                <ul>
+                    <li><a href="#">NVI</a></li>
+                    <li><a href="#">RA</a></li>
+                    <li><a href="#">ACF</a></li>
+                    <li><a href="#">KJV</a></li>
+                    <li><a href="#">BBE</a></li>
+                    <li><a href="#">APEE</a></li>
+                    <li><a href="#">RVR</a></li>
+                </ul>
+            </li>
+            <li><a href="#">CULTOS</a>
+                <ul>
+                    <li><a href="#">QUARTA FIRE</a></li>
+                    <li><a href="#">SEXTA FREE</a></li>
+                    <li><a href="#">VIVA PINK</a></li>
+                </ul>
+            </li>
+            <li><a href="#">EVENTOS</a>
+                <ul>
+                    <li><a href="#">VISION ACAMP</a></li>
+                    <li><a href="#">ENCONTRO DE MINISTERIOS</a></li>
+                </ul>
+            </li>
+            <li><a href="#">MINISTERIOS</a>
+                <ul>
+                    <li><a href="#">MIDIA</a></li>
+                    <li><a href="#">KINDOM MUSIC</a></li>
+                    <li><a href="#">RECEPÇÃO</a></li>
+                    <li><a href="#">DANÇA</a></li>
+                </ul>
+            </li>
+            <li><a href="#">QUEM SOMOS</a>
+                <ul>
+                    <li><a href="{% url 'quemsomos' %}">INFORMAÇÕES DA IGREJA</a></li>
+                </ul>
+            </li>
+            <li><a href="#">COMUNHÃO</a>
+                <ul>
+                    <li><a href="#">FORA DA CAIXA</a></li>
+                    <li><a href="#">PEÇA UMA ORAÇÃO</a></li>
+                    <li><a href="#">ORE POR NOSSOS IRMÃOS</a></li>
+                    <li><a href="#">COMPARTILHE SEU TESTEMUNHO</a></li>                   
+                </ul>
+            </li>
+        </ul>
+        </nav>
+      </div>
     </header>
     <main>
       {% block 'main' %}
       {% endblock %}
     </main>
-    <footer>
-      <!-- Add footer content here -->
-    </footer>
+    <!--FONT AWESOME-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+</head>
+<body>
+<footer>
+<div class="footer">
+<div class="row">
+<a href="https://web.facebook.com/kingdomcomunidade?_rdc=1&_rdr" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a>
+<a href="https://www.instagram.com/comunidadekingdom/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a>
+<a href="https://api.whatsapp.com/send?phone=5511975797732" target="_blank" rel="noopener noreferrer"><i class="fa fa-whatsapp"></i></a>
+
+</div>
+
+<div class="row">
+<ul>
+<li><a href="#">INICIO</a></li>
+<li><a href="{% url 'quemsomos' %}">QUEM SOMOS</a></li>
+<li><a href="#">CULTOS</a></li>
+<li><a href="#">EVENTOS</a></li>
+<li><a href="#">DOAÇÕES</a></li>
+</ul>
+</div>
+
+<div class="row">
+Copyright © 2023 Comunidade Kingdom - Todos os direitos reservados || Criado por: <a href="https://github.com/MurilloHMS" target="_blank" rel="noopener noreferrer"><strong>MurilloHMS</strong></a>
+</div>
+</div>
+</footer>
   </article>
 </body>
 </html>

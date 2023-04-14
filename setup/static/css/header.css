@@ -1,18 +1,31 @@
 :root {
-  --cor-fundo : #0d11dd;
-  --cor-hover : #f3870c;
-  --cor-primaria : #ffffff;
-}
+	--cor-fundo : #0d11dd;
+	--cor-hover : #f3870c;
+	--cor-primaria : #ffffff;
+  }
+
+.logo-kingdom {
+  height: 50px;
+  margin-right: 10px;
+  }
+
 
 
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 10px;
   background-color: #353535;
   color: var(--cor-primaria);
+  font-family: 'Play', 'sans-serif'
+  }
+
+nav {
+  display: inline-block;
+  margin-left: 20px;
 }
+
 nav ul {
   list-style: none;
   margin: 0;
@@ -30,7 +43,7 @@ nav a {
 }
 nav a:hover {
   background-color: var(--cor-hover);
-}
+  }
 
 nav ul ul {
   display: none;
@@ -45,10 +58,7 @@ nav ul ul li {
 nav li:hover > ul {
   display: block;
 }
-img {
-  height: 50px;
-  margin-right: 10px;
-}
+
 
 .kg-frase-1{
   color: var(--cor-hover);
@@ -67,8 +77,8 @@ body {
   animation: animateBg 60s linear infinite;
   background-image: linear-gradient(0deg,#ff8c00,#00008b,#ff8c00,#00008b,#ff8c00,#00008b,#ff8c00,#00008b);
   background-size: 100% 800%;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 @keyframes animateBg {
   0% { background-position: 0% 0%; }
