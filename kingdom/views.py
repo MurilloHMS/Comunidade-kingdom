@@ -20,3 +20,6 @@ def ensinar(request):
 
 def direcionar(request):
     return render(request, 'kingdom/amago/direcionar.html')
+
+def nvi(request):
+    return render(request, 'kingdom/biblia/nvi.html')

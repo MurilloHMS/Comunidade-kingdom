@@ -9,4 +9,5 @@ urlpatterns = [
     path('amar/', amar, name='amar'),
     path('ensinar/', ensinar, name='ensinar'),
     path('direcionar/', direcionar, name='direcionar'),
+    path('biblia/nvi', nvi, name='biblia/nvi')
 ]
