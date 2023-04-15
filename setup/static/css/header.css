@@ -18,7 +18,8 @@ header {
   padding: 10px;
   background-color: #353535;
   color: var(--cor-primaria);
-  font-family: 'Play', 'sans-serif'
+  font-family: 'Play', 'sans-serif';
+  z-index: 9;
   }
 
 nav {
@@ -51,6 +52,7 @@ nav ul ul {
   top: 100%;
   left: 0;
   background-color: var(--cor-fundo);
+  z-index: 9;
 }
 nav ul ul li {
   width: 200px;

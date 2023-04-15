@@ -10,5 +10,6 @@ urlpatterns = [
     path('ensinar/', ensinar, name='ensinar'),
     path('direcionar/', direcionar, name='direcionar'),
     path('biblia/nvi', nvi, name='biblia/nvi'),
-    path('comunhao/fora-da-caixa', fora_da_caixa , name='fora-da-caixa')
+    path('biblia/nvi/<int:livros_id>', palavra , name = 'palavra' ),
+    path('comunhao/fora-da-caixa', fora_da_caixa , name='fora-da-caixa'),
 ]

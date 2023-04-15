@@ -4,7 +4,7 @@
 {% block 'title' %} BÍBLIA NVI {% endblock %}
 
 {% block 'head' %}
-
+    <link rel="stylesheet" href="{% static 'css/nvi.css' %}">
 {% endblock %}
 
 
@@ -12,17 +12,24 @@
     <section class="best-bible-book-area">
         <div class="container">
             <div class="row">
+                {% if nvt %}
+                {% for livro in nvt %}
                 <!-- Single Best bible Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="col-12 col-sm-6 col-lg-4" style= "display: inline-block">
                     <div class="single-best-book-area mb-30">
-                        <img src="#{% static 'media/logo.png' %}" alt="Your Logo Here">
-                        <div class="receipe-content">
-                            <a href="#">
-                                <h5>Gênesis</h5>
-                            </a>
-                        </div>
+                        <a href="{% url 'palavra' livro.id %}">
+                        <img class="logo-biblia" src="{% static 'media/bible-icon2.png' %}" alt="LOGO HERE">
+                            <div class="book-content">
+                                <a href="{% url 'palavra' livro.id %}">
+                                    <h5>{{ livro.livro }}</h5>
+                                </a>
+                            </div>
+                        </a>
                     </div>
                 </div>
+                {% endfor %}
+                {% else %}
+                {% endif %}
             </div>
         </div>
     </section>
