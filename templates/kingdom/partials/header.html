@@ -1,0 +1,56 @@
+{% load static %}
+
+<header>
+    <a href="/"><img class="logo-kingdom" src="{% static 'media/logo.png' %}" alt="My Logo"></a>
+    <div>
+      <a class="kg-frase-1"id="kg-frase" href ="{% url 'ver' %}">Ver</a> - <a class="kg-frase-2"id="kg-frase" href ="{% url 'acolher' %}">Acolher</a> - <a class="kg-frase-1"id="kg-frase" href ="{% url 'amar' %}">Amar</a> - <a class="kg-frase-2"id="kg-frase" href ="{% url 'ensinar' %}">Ensinar</a> - <a class="kg-frase-1"id="kg-frase" href ="{% url 'direcionar' %}">Direcionar</a>
+    </div>
+    <div class="menu-bar">
+      <nav>
+        <ul>
+          <li><a href="/">INICIO</a></li>
+          <li><a href="#">BIBLIA</a>
+              <ul>
+                  <li><a href="{% url 'biblia/nvi' %}">NVI</a></li>
+                  <li><a href="#">ESTUDOS BÍBLICOS</a></li>
+              </ul>
+          </li>
+          <li><a href="#">CULTOS</a>
+              <ul>
+                  <li><a href="#">QUARTA FIRE</a></li>
+                  <li><a href="#">SEXTA FREE</a></li>
+                  <li><a href="#">VIVA PINK</a></li>
+              </ul>
+          </li>
+          <li><a href="#">EVENTOS</a>
+              <ul>
+                  <li><a href="#">VISION ACAMP</a></li>
+                  <li><a href="#">ENCONTRO DE MINISTERIOS</a></li>
+              </ul>
+          </li>
+          <li><a href="#">MINISTERIOS</a>
+              <ul>
+                  <li><a href="#">MIDIA</a></li>
+                  <li><a href="#">KINDOM MUSIC</a></li>
+                  <li><a href="#">RECEPÇÃO</a></li>
+                  <li><a href="#">DANÇA</a></li>
+              </ul>
+          </li>
+          <li><a href="#">QUEM SOMOS</a>
+              <ul>
+                  <li><a href="{% url 'quemsomos' %}">INFORMAÇÕES DA IGREJA</a></li>
+              </ul>
+          </li>
+          <li><a href="#">COMUNHÃO</a>
+              <ul>
+                  <li><a href="{% url 'fora-da-caixa' %}">FORA DA CAIXA</a></li>
+                  <li><a href="#">PEÇA UMA ORAÇÃO</a></li>
+                  <li><a href="#">ORE POR NOSSOS IRMÃOS</a></li>
+                  <li><a href="#">COMPARTILHE SEU TESTEMUNHO</a></li>
+                  <li><a href="#">SEJA UM VOLUNTÁRIO</a></li>               
+              </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
